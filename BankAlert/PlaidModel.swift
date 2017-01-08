@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public struct URLPaths {
     
     let connect = "/connect"
@@ -24,17 +23,14 @@ public struct URLPaths {
 
 class Credentials {
     
-    let client_id = "PLAID_CLIENT_ID"
-    let public_key = "PLAID_PUBLIC_KEY"
-    let secret = "PLAID_SECRET"
-    var username : String?//"plaid_test"
-    var password : String?// "plaid_good"
+    var username : String? //"plaid_test"
+    var password : String? // "plaid_good"
     var type : String? // "test_wells"
 }
 
 
 public class Quickstart: NSObject {
- 
+/*
     //Gaining access urlpath
     func accessUrlPath() {
         let credentials = Credentials()
@@ -52,9 +48,8 @@ public class Quickstart: NSObject {
  
         components.queryItems = [clientId, secret, username, password, type]
         print(components.string!)
- }
- 
-//   static func myData(completionhandler: @escaping ([Credentials]) -> ()) {
+    }
+*/
     static func myData(username: String, password: String, type: String, completionhandler: @escaping ([Credentials]) -> ()) {
         
         var keys: [String: Any]?
@@ -73,34 +68,29 @@ public class Quickstart: NSObject {
         var request = URLRequest(url: endpoint!)
         let session = URLSession.shared
         
-        request.httpMethod = "POST" // Transaction
+        request.httpMethod = "POST"
         
-        let task = session.dataTask(with: request) { (data, response, err) in
-            
-            if let error = err {
-                print(error)
-                return
-            }
-            
-            let code = HTTPURLResponse()
-            if code.statusCode == 200 {
+            let task = session.dataTask(with: request) { (data, response, err) in
+                
+                if let error = err {
+                    print(error)
+                    return
+                }
+                
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                     
+                    print(json)
+                    
+                } catch let error as NSError {
+                    print(error)
+                }
             }
-
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-                
-                print(json)
- 
-//                DispatchQueue.main.async(execute: completionhandler() {
-//                })
-                
-            } catch let error as NSError {
-                print(error)
-            }
-        }
         task.resume()
         }
     }
-    
 }
+
+
+
+

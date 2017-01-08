@@ -22,34 +22,13 @@ internal class Institutions : NSObject {
         self.type = type
         self.hasmfa = hasmfa
     }
-    //    enum Product: String {
-    //        case connect, auth, balance, info, income, risk
-    //    }
-    //    enum Mfa: String {
-    //        case code, list, questions
-    //    }
-    //    let product: Set<Product>
-    //    let mfa: Set<Mfa>
-    //    let credentials: (username: String, password: String)
     
     init?(json: [String: Any]) {
-        
-        //        let credentials = json["credentials"] as? [String: String],
-        //            let username = credentials["username"],
-        //            let password = credentials["password"],
-        //        let productsJson = json["products"] as? [String],
-        //        let mfaJson = json["mfa"] as? [String]
-        
-        //            guard let product = Product(rawValue: string) else {
-        //            guard let mfa = Mfa(rawValue: string) else {
         
         self.id = json["id"] as! String
         self.name = json["name"] as! String
         self.type = json["type"] as! String
         self.hasmfa = json["has_mfa"] as! Bool
-        //        self.credentials = (username, password)
-        //        self.product = products
-        //        self.mfa = mfas
     }
 }
 
