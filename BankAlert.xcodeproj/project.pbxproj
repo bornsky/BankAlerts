@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9903AEA71E221C7600205D23 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = BankAlert/.gitignore; sourceTree = "<group>"; };
+		9903AEA71E221C7600205D23 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		990E6EE31E095A04003D8E54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9923BE011DFB480200E11E87 /* BankAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9923BE041DFB480200E11E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +108,6 @@
 		9923BDF81DFB480200E11E87 = {
 			isa = PBXGroup;
 			children = (
-				9903AEA71E221C7600205D23 /* .gitignore */,
 				9923BE031DFB480200E11E87 /* BankAlert */,
 				9988987F1E1F4DC10044CC0F /* BankAlertUITests */,
 				9988988D1E1F4E670044CC0F /* BankAlertTests */,
@@ -141,6 +140,7 @@
 				99A8A67C1E079E2200A7A929 /* Model */,
 				9923BE101DFB480200E11E87 /* Info.plist */,
 				99D03F641E0B5FC800E73CE8 /* Plaidkeys.plist */,
+				9903AEA71E221C7600205D23 /* .gitignore */,
 				99EA7C2F1E20AD6000A08AE7 /* Sources */,
 			);
 			path = BankAlert;
