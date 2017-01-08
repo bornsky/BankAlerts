@@ -1,3 +1,5 @@
+![bankalert](https://cloud.githubusercontent.com/assets/6892126/21751758/2bfa8cfe-d581-11e6-8e3e-7432fab5935f.png)
+
 # BankAlerts
 BankAlert is a opensource iOS application that lets you recieve instant transaction notifications from selected banks.  
 
