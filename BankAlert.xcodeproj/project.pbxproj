@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E4ED27A68B07F2287311FA2 /* Pods_BankAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0766FDD0C8703067F96EB191 /* Pods_BankAlert.framework */; };
 		9903AEA81E221C7600205D23 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9903AEA71E221C7600205D23 /* .gitignore */; };
 		990E6EE41E095A04003D8E54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990E6EE31E095A04003D8E54 /* QuartzCore.framework */; };
 		9923BE051DFB480200E11E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923BE041DFB480200E11E87 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		99D03F651E0B5FC800E73CE8 /* Plaidkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99D03F641E0B5FC800E73CE8 /* Plaidkeys.plist */; };
 		99D03F671E0B739600E73CE8 /* SFFocusViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D03F661E0B739600E73CE8 /* SFFocusViewLayout.swift */; };
 		99D06D611E0C74C600DDE083 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D06D601E0C74C600DDE083 /* LoginViewController.swift */; };
+		99D3B2AB1E2452700049C91D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99D3B2AA1E2452700049C91D /* GoogleService-Info.plist */; };
 		99EA7C311E20AE3100A08AE7 /* PlaidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA7C301E20AE3100A08AE7 /* PlaidManager.swift */; };
 		99EA7C331E20AF7200A08AE7 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA7C321E20AF7200A08AE7 /* Transactions.swift */; };
 		99EA7C351E20BFEE00A08AE7 /* Institutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA7C341E20BFEE00A08AE7 /* Institutions.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0766FDD0C8703067F96EB191 /* Pods_BankAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E495232931D48407062333D /* Pods-BankAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankAlert/Pods-BankAlert.release.xcconfig"; sourceTree = "<group>"; };
 		9903AEA71E221C7600205D23 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		990E6EE31E095A04003D8E54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9923BE011DFB480200E11E87 /* BankAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,9 +77,11 @@
 		99D03F641E0B5FC800E73CE8 /* Plaidkeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Plaidkeys.plist; sourceTree = "<group>"; };
 		99D03F661E0B739600E73CE8 /* SFFocusViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFFocusViewLayout.swift; sourceTree = "<group>"; };
 		99D06D601E0C74C600DDE083 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		99D3B2AA1E2452700049C91D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99EA7C301E20AE3100A08AE7 /* PlaidManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidManager.swift; sourceTree = "<group>"; };
 		99EA7C321E20AF7200A08AE7 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		99EA7C341E20BFEE00A08AE7 /* Institutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Institutions.swift; sourceTree = "<group>"; };
+		F20091934A5073A8048165F9 /* Pods-BankAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankAlert/Pods-BankAlert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 			files = (
 				990E6EE41E095A04003D8E54 /* QuartzCore.framework in Frameworks */,
 				997135191DFDF0C4001EF0F2 /* UserNotifications.framework in Frameworks */,
+				6E4ED27A68B07F2287311FA2 /* Pods_BankAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC7EA92C38D9DE45B73A18E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F20091934A5073A8048165F9 /* Pods-BankAlert.debug.xcconfig */,
+				7E495232931D48407062333D /* Pods-BankAlert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9923BDF81DFB480200E11E87 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +129,7 @@
 				9988988D1E1F4E670044CC0F /* BankAlertTests */,
 				9923BE021DFB480200E11E87 /* Products */,
 				997135171DFDF0C3001EF0F2 /* Frameworks */,
+				0AC7EA92C38D9DE45B73A18E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +158,7 @@
 				9923BE101DFB480200E11E87 /* Info.plist */,
 				99D03F641E0B5FC800E73CE8 /* Plaidkeys.plist */,
 				9903AEA71E221C7600205D23 /* .gitignore */,
+				99D3B2AA1E2452700049C91D /* GoogleService-Info.plist */,
 				99EA7C2F1E20AD6000A08AE7 /* Sources */,
 			);
 			path = BankAlert;
@@ -152,6 +170,7 @@
 				998898451E1F477D0044CC0F /* XCTest.framework */,
 				990E6EE31E095A04003D8E54 /* QuartzCore.framework */,
 				997135181DFDF0C3001EF0F2 /* UserNotifications.framework */,
+				0766FDD0C8703067F96EB191 /* Pods_BankAlert.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9923BE131DFB480200E11E87 /* Build configuration list for PBXNativeTarget "BankAlert" */;
 			buildPhases = (
+				00869EBC4B60827AB6C24752 /* [CP] Check Pods Manifest.lock */,
 				9923BDFD1DFB480200E11E87 /* Sources */,
 				9923BDFE1DFB480200E11E87 /* Frameworks */,
 				9923BDFF1DFB480200E11E87 /* Resources */,
+				092386BB37FE452B00DB46C5 /* [CP] Embed Pods Frameworks */,
+				410308E91A77384DBAE52BB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +336,7 @@
 				9923BE0F1DFB480200E11E87 /* LaunchScreen.storyboard in Resources */,
 				9923BE0C1DFB480200E11E87 /* Assets.xcassets in Resources */,
 				9923BE0A1DFB480200E11E87 /* Main.storyboard in Resources */,
+				99D3B2AB1E2452700049C91D /* GoogleService-Info.plist in Resources */,
 				99D03F651E0B5FC800E73CE8 /* Plaidkeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +356,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00869EBC4B60827AB6C24752 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		092386BB37FE452B00DB46C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BankAlert/Pods-BankAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		410308E91A77384DBAE52BB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BankAlert/Pods-BankAlert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9923BDFD1DFB480200E11E87 /* Sources */ = {
@@ -499,6 +570,7 @@
 		};
 		9923BE141DFB480200E11E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F20091934A5073A8048165F9 /* Pods-BankAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -515,6 +587,7 @@
 		};
 		9923BE151DFB480200E11E87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E495232931D48407062333D /* Pods-BankAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

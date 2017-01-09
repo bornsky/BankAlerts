@@ -51,7 +51,7 @@ class PlaidTransaction: NSObject {
         }
         
         if let dict = keys {
-            let type = "test_wells"
+            let type = "wells"
             let secret = dict["secret"] as? String
             let client_id = dict["client_id"] as? String
             

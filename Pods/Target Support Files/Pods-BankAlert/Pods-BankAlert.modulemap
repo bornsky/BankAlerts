@@ -1,0 +1,6 @@
+framework module Pods_BankAlert {
+  umbrella header "Pods-BankAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

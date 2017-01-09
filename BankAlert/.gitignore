@@ -25,5 +25,7 @@ xcuserdata/
 
 *.DS_Store
 *Plaidkeys.plist
+*GoogleService-Info.plist
+*Pods
 *BankAlertUITests
 *BanksAlertTests

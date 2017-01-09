@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
     // Sends Notification
         notificationContent()
-        transactionAlerts()
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,18 +55,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
  
         } else {
     // Successfully login alert will show
-           Quickstart.myData(username: "plaid_test", password: "plaid_good", type: "wells", completionhandler: { (Credentials) in
-            print(Credentials)
+            let username = self.username.text
+            let password = self.password.text
+            let type = PlaidManager.sharedManager.credentials.type //Has to be wells to get that feed back
+                
+           Quickstart.myData(username: username!, password: password!, type: type!, completionhandler: { (credentials) in
+            print(credentials) // Print out banks data
            })
             
             let successfulalert = UIAlertController(title: "Congrats", message: "You will start receiving transaction alerts", preferredStyle: .alert)
             successfulalert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.cancel, handler: nil))
+            
             // Present the AlertController
             self.present(successfulalert, animated: true, completion: nil)
         }
     }
     
-    /* If user successfully login and is authicated then this function will fire with the correct amount of data */
+    /* If user successfully login then this function will fire with the correct amount of data */
     func transactionAlerts() {
         PlaidTransaction.fetchTransactions { (transaction) in
          self.transaction = transaction   
@@ -83,6 +88,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         content.sound = UNNotificationSound.default()
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNPushNotificationTrigger
         let request = UNNotificationRequest(identifier: "Five", content: content, trigger: trigger)
         let center = UNUserNotificationCenter.current()
         center.add(request) { (error : Error?) in
