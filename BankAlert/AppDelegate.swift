@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import FirebaseMessaging
 import Firebase
+import UserNotifications
+import UserNotificationsUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +22,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Config Firebase
         FIRApp.configure()
+        
+        // Register with APNs
+        UIApplication.shared.registerForRemoteNotifications()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            // Enable or disable features based on authorization
+        }
+        UNUserNotificationCenter.current().getNotificationSettings { (UNNotificationSettings) in
+            
+        }
+        application.registerForRemoteNotifications()
+        
         return true
     }
 
@@ -43,15 +58,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        print("registered")
+        // Forward the token to your server.
+        
     }
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         print(userInfo) // Should send userinfo
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        // Handle the fail with error 
-        print("Error with this error: ", error)
+        
+        // The token is not currently available.
+        print("Remote notification support is unavailable due to error: \(error.localizedDescription)")
+        
+    
     }
 }
 

@@ -88,7 +88,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         content.sound = UNNotificationSound.default()
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let trigger = UNPushNotificationTrigger
         let request = UNNotificationRequest(identifier: "Five", content: content, trigger: trigger)
         let center = UNUserNotificationCenter.current()
         center.add(request) { (error : Error?) in
