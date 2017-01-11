@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: BankAlert.xcodeproj # path to your xcodeproj folder
+xcode_scheme: BankAlertTest
+xcode_sdk: iphonesimulator8.4 
