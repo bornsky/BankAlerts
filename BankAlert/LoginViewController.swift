@@ -63,7 +63,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             print(credentials) // Print out banks data
            })
             
-            let successfulalert = UIAlertController(title: "Congrats", message: "You will start receiving transaction alerts", preferredStyle: .alert)
+            let successfulalert = UIAlertController(title: "Congrats", message: "You will start receiving transaction notifications", preferredStyle: .alert)
             successfulalert.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.cancel, handler: nil))
             
             // Present the AlertController
