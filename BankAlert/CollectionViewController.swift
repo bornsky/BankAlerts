@@ -33,7 +33,6 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         date.second = 20
     }
     
-    
     func updateUI() {
         
         PlaidInstitutions.fetchInstitutionsdata { (institution) in
@@ -59,9 +58,30 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! BanksCollectionViewCell
         
+        let backgroundImages = [
+            UIImage(named: "BOA BG")!,
+            UIImage(named: "BB&T BG")!,
+            UIImage(named: "Chase BG")!,
+            UIImage(named: "Wellsfargo BG")!,
+            UIImage(named: "Citi BG")!,
+            UIImage(named: "US Bank BG")!,
+            UIImage(named: "USAA BG")!,
+            UIImage(named: "Capital One BG")!,
+            UIImage(named: "Capital One BG")!,
+            UIImage(named: "American Express BG")!,
+            UIImage(named: "Charles Schwab BG")!,
+            UIImage(named: "Fidelity BG")!,
+            UIImage(named: "PNC BG")!,
+            UIImage(named: "TD BG")!,
+            UIImage(named: "Navy BG")!,
+            UIImage(named: "SunTrust BG")!
+        ]
+        
+        // List of background images on cells
+        cell.backgroundView = UIImageView(image: backgroundImages[indexPath.row])
         cell.banks.text = self.institution?[indexPath.row].name
         
-        // List of background bank images
+        // List of background bank images on segue
         self.images = [
             UIImage(named: "BOA")!,
             UIImage(named: "BB&T")!,
@@ -82,7 +102,32 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         ]
         return cell
     }
-    
+/*
+     This will loop thru an array of images to put in cells
+     if the cells turn nil then we want to display a blank solid background 
+     image
+     
+    func images() -> [UIImage] {
+        let backgroundImages = [
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            UIImage(named: "")!,
+            ]
+        
+        for i in backgroundImages {
+            
+        }
+        return backgroundImages
+    }
+*/
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

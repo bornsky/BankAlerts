@@ -34,7 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         application.registerForRemoteNotifications()
         
+        application.setMinimumBackgroundFetchInterval(10)
+        
         return true
+    }
+    
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        // Fetch with completion handler for a certain amount of stuff
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
