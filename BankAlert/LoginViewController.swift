@@ -54,10 +54,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.present(alert, animated: true, completion: nil)
  
         } else {
+            
     // Successfully login alert will show
             let username = self.username.text
             let password = self.password.text
-            let type = PlaidManager.sharedManager.credentials.type //Has to be wells to get that feed back
+            let type = PlaidManager.sharedManager.credentials.type //Has to be wellsfargo to get that feed back
                 
            Quickstart.myData(username: username!, password: password!, type: type!, completionhandler: { (credentials) in
             print(credentials) // Print out banks data
@@ -71,16 +72,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    /* If user successfully login then this function will fire with the correct amount of data */
+    /* If user successfully login then this function should fire with the correct amount of data */
     func transactionAlerts() {
         PlaidTransaction.fetchTransactions { (transaction) in
          self.transaction = transaction   
         }
     }
-    
-    // Fires Notification Alert one a new bank
+
+    // Fires Notification Alert
     func notificationContent() {
         
+        // Title, subtitle and body should have the correct bank information
         let content = UNMutableNotificationContent()
         content.title = NSString.localizedUserNotificationString(forKey: "Title", arguments: nil)
         content.subtitle = NSString.localizedUserNotificationString(forKey: "Subtitle", arguments: nil)

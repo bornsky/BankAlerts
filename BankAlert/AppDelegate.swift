@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import FirebaseMessaging
-import Firebase
+//import FirebaseMessaging
+//import Firebase
 import UserNotifications
 import UserNotificationsUI
 
@@ -21,12 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         // Config Firebase
-        FIRApp.configure()
+//        FIRApp.configure()
         
         // Register with APNs
         UIApplication.shared.registerForRemoteNotifications()
         
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             // Enable or disable features based on authorization
         }
         UNUserNotificationCenter.current().getNotificationSettings { (UNNotificationSettings) in
@@ -67,16 +67,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Forward the token to your server.
         
     }
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print(userInfo) // Should send userinfo
-    }
-    
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        
-        // The token is not currently available.
-        print("Remote notification support is unavailable due to error: \(error.localizedDescription)")
-        
-    
-    }
+//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//        
+//        print("Message >>> \(userInfo["gmc_message_id"])")
+//        print(userInfo) // Should send userinfo
+//        
+//    }
+//    
+//    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+//        
+//        // The token is not currently available.
+//        print("Remote notification support is unavailable due to error: \(error.localizedDescription)")
+//        
+//    
+//    }
 }
 

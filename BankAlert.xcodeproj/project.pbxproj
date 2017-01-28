@@ -18,6 +18,7 @@
 		9923BE191DFB482400E11E87 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923BE161DFB482400E11E87 /* CollectionViewController.swift */; };
 		9923BE1A1DFB482400E11E87 /* PlaidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923BE171DFB482400E11E87 /* PlaidModel.swift */; };
 		993CFF581E0A11C7007518CD /* BanksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993CFF571E0A11C7007518CD /* BanksCollectionViewCell.swift */; };
+		99476B0B1E3C8372006B0603 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99476B0A1E3C8372006B0603 /* TransactionsTableViewController.swift */; };
 		997135191DFDF0C4001EF0F2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997135181DFDF0C3001EF0F2 /* UserNotifications.framework */; };
 		997CE8511DFE33F200A25BC9 /* RKNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 997CE8501DFE33F200A25BC9 /* RKNotificationHub.m */; };
 		998898811E1F4DC10044CC0F /* BankAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998898801E1F4DC10044CC0F /* BankAlertUITests.swift */; };
@@ -63,6 +64,8 @@
 		9923BE161DFB482400E11E87 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		9923BE171DFB482400E11E87 /* PlaidModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidModel.swift; sourceTree = "<group>"; };
 		993CFF571E0A11C7007518CD /* BanksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksCollectionViewCell.swift; sourceTree = "<group>"; };
+		99476B091E3A7ECB006B0603 /* BankAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BankAlert.entitlements; sourceTree = "<group>"; };
+		99476B0A1E3C8372006B0603 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
 		997135181DFDF0C3001EF0F2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		997CE84E1DFE33F100A25BC9 /* BankAlert-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAlert-Bridging-Header.h"; sourceTree = "<group>"; };
 		997CE84F1DFE33F200A25BC9 /* RKNotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNotificationHub.h; sourceTree = "<group>"; };
@@ -146,10 +149,12 @@
 		9923BE031DFB480200E11E87 /* BankAlert */ = {
 			isa = PBXGroup;
 			children = (
+				99476B091E3A7ECB006B0603 /* BankAlert.entitlements */,
 				9923BE041DFB480200E11E87 /* AppDelegate.swift */,
 				9923BE061DFB480200E11E87 /* ViewController.swift */,
 				9923BE161DFB482400E11E87 /* CollectionViewController.swift */,
 				99D06D601E0C74C600DDE083 /* LoginViewController.swift */,
+				99476B0A1E3C8372006B0603 /* TransactionsTableViewController.swift */,
 				993CFF571E0A11C7007518CD /* BanksCollectionViewCell.swift */,
 				9923BE0B1DFB480200E11E87 /* Assets.xcassets */,
 				9923BE081DFB480200E11E87 /* Main.storyboard */,
@@ -293,6 +298,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					9988987D1E1F4DC10044CC0F = {
@@ -418,6 +426,7 @@
 				9923BE1A1DFB482400E11E87 /* PlaidModel.swift in Sources */,
 				99D06D611E0C74C600DDE083 /* LoginViewController.swift in Sources */,
 				9923BE191DFB482400E11E87 /* CollectionViewController.swift in Sources */,
+				99476B0B1E3C8372006B0603 /* TransactionsTableViewController.swift in Sources */,
 				99EA7C311E20AE3100A08AE7 /* PlaidManager.swift in Sources */,
 				997CE8511DFE33F200A25BC9 /* RKNotificationHub.m in Sources */,
 				99D03F671E0B739600E73CE8 /* SFFocusViewLayout.swift in Sources */,
@@ -574,6 +583,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BankAlert/BankAlert.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S9XB7JWVLE;
 				INFOPLIST_FILE = BankAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -591,6 +602,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = BankAlert/BankAlert.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S9XB7JWVLE;
 				INFOPLIST_FILE = BankAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
