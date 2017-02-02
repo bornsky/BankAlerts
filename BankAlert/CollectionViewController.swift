@@ -138,7 +138,6 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
             
             // Send credientals with segue
             PlaidManager.sharedManager.credentials.type = self.institution?[(path?.row)!].type
-            
         }
     }
 }

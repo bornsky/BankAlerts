@@ -31,9 +31,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.username.delegate = self
         self.password.delegate = self
         
+        
+        // Create a list like button to be displayed list of transactions
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(LoginViewController.prints))
+        
     // Sends Notification
         notificationContent()
-
+    }
+    
+    func prints() {
+        print("button was pressed")
     }
     
     override func viewDidAppear(_ animated: Bool) {
