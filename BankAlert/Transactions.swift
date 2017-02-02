@@ -51,7 +51,7 @@ class PlaidTransaction: NSObject {
         }
         
         if let dict = keys {
-            let type = "wells"
+            let type = "test_wells"
             let secret = dict["secret"] as? String
             let client_id = dict["client_id"] as? String
             
@@ -69,7 +69,6 @@ class PlaidTransaction: NSObject {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String: Any]
                     var trans : [Transaction] = []
                     for i in json["transactions"] as! [[String: Any]] {
-                        
                         if let transaction = Transaction(transaction: i) {
                             
                             trans.append(transaction)

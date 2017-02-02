@@ -7,8 +7,6 @@
 //
 
 import UIKit
-//import FirebaseMessaging
-//import Firebase
 import UserNotifications
 import UserNotificationsUI
 
@@ -19,9 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        // Config Firebase
-//        FIRApp.configure()
         
         // Register with APNs
         UIApplication.shared.registerForRemoteNotifications()

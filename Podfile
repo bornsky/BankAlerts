@@ -5,9 +5,6 @@ use_frameworks!
 
 target 'BankAlert' do
 
-pod 'Firebase'
-pod 'Firebase/Core'
-pod 'Firebase/Messaging'
 
 end
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1EBF687F00E353136D112806DA17C0C"
+               BlueprintIdentifier = "28CFD7B1F31C4AF577CC07EC22445B0D"
                BuildableName = "Pods_BankAlert.framework"
                BlueprintName = "Pods-BankAlert"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1EBF687F00E353136D112806DA17C0C"
+            BlueprintIdentifier = "28CFD7B1F31C4AF577CC07EC22445B0D"
             BuildableName = "Pods_BankAlert.framework"
             BlueprintName = "Pods-BankAlert"
             ReferencedContainer = "container:Pods.xcodeproj">
