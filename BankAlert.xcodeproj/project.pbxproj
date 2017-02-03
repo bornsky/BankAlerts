@@ -18,7 +18,7 @@
 		9923BE191DFB482400E11E87 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923BE161DFB482400E11E87 /* CollectionViewController.swift */; };
 		9923BE1A1DFB482400E11E87 /* PlaidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9923BE171DFB482400E11E87 /* PlaidModel.swift */; };
 		993CFF581E0A11C7007518CD /* BanksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993CFF571E0A11C7007518CD /* BanksCollectionViewCell.swift */; };
-		99476B0B1E3C8372006B0603 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99476B0A1E3C8372006B0603 /* TransactionsTableViewController.swift */; };
+		99476B0B1E3C8372006B0603 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99476B0A1E3C8372006B0603 /* TransactionsViewController.swift */; };
 		997135191DFDF0C4001EF0F2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997135181DFDF0C3001EF0F2 /* UserNotifications.framework */; };
 		997CE8511DFE33F200A25BC9 /* RKNotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 997CE8501DFE33F200A25BC9 /* RKNotificationHub.m */; };
 		998898811E1F4DC10044CC0F /* BankAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998898801E1F4DC10044CC0F /* BankAlertUITests.swift */; };
@@ -30,6 +30,7 @@
 		99EA7C311E20AE3100A08AE7 /* PlaidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA7C301E20AE3100A08AE7 /* PlaidManager.swift */; };
 		99EA7C331E20AF7200A08AE7 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA7C321E20AF7200A08AE7 /* Transactions.swift */; };
 		99EA7C351E20BFEE00A08AE7 /* Institutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EA7C341E20BFEE00A08AE7 /* Institutions.swift */; };
+		99FA637A1E44039400AC7D00 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA63791E44039400AC7D00 /* TransactionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,7 @@
 		9923BE171DFB482400E11E87 /* PlaidModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidModel.swift; sourceTree = "<group>"; };
 		993CFF571E0A11C7007518CD /* BanksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksCollectionViewCell.swift; sourceTree = "<group>"; };
 		99476B091E3A7ECB006B0603 /* BankAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BankAlert.entitlements; sourceTree = "<group>"; };
-		99476B0A1E3C8372006B0603 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
+		99476B0A1E3C8372006B0603 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		997135181DFDF0C3001EF0F2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		997CE84E1DFE33F100A25BC9 /* BankAlert-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BankAlert-Bridging-Header.h"; sourceTree = "<group>"; };
 		997CE84F1DFE33F200A25BC9 /* RKNotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKNotificationHub.h; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		99EA7C301E20AE3100A08AE7 /* PlaidManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaidManager.swift; sourceTree = "<group>"; };
 		99EA7C321E20AF7200A08AE7 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		99EA7C341E20BFEE00A08AE7 /* Institutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Institutions.swift; sourceTree = "<group>"; };
+		99FA63791E44039400AC7D00 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		F20091934A5073A8048165F9 /* Pods-BankAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankAlert/Pods-BankAlert.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,16 +156,14 @@
 				9923BE061DFB480200E11E87 /* ViewController.swift */,
 				9923BE161DFB482400E11E87 /* CollectionViewController.swift */,
 				99D06D601E0C74C600DDE083 /* LoginViewController.swift */,
-				99476B0A1E3C8372006B0603 /* TransactionsTableViewController.swift */,
+				99FA63791E44039400AC7D00 /* TransactionTableViewCell.swift */,
+				99476B0A1E3C8372006B0603 /* TransactionsViewController.swift */,
 				993CFF571E0A11C7007518CD /* BanksCollectionViewCell.swift */,
 				9923BE0B1DFB480200E11E87 /* Assets.xcassets */,
 				9923BE081DFB480200E11E87 /* Main.storyboard */,
 				9923BE0D1DFB480200E11E87 /* LaunchScreen.storyboard */,
 				99A8A67C1E079E2200A7A929 /* Model */,
-				9923BE101DFB480200E11E87 /* Info.plist */,
-				99D03F641E0B5FC800E73CE8 /* Plaidkeys.plist */,
-				9903AEA71E221C7600205D23 /* .gitignore */,
-				99D3B2AA1E2452700049C91D /* GoogleService-Info.plist */,
+				99FA637D1E44078300AC7D00 /* Plist */,
 				99EA7C2F1E20AD6000A08AE7 /* Sources */,
 			);
 			path = BankAlert;
@@ -218,6 +218,17 @@
 				99D03F661E0B739600E73CE8 /* SFFocusViewLayout.swift */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		99FA637D1E44078300AC7D00 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				9923BE101DFB480200E11E87 /* Info.plist */,
+				99D03F641E0B5FC800E73CE8 /* Plaidkeys.plist */,
+				9903AEA71E221C7600205D23 /* .gitignore */,
+				99D3B2AA1E2452700049C91D /* GoogleService-Info.plist */,
+			);
+			name = Plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,9 +435,10 @@
 				993CFF581E0A11C7007518CD /* BanksCollectionViewCell.swift in Sources */,
 				99EA7C351E20BFEE00A08AE7 /* Institutions.swift in Sources */,
 				9923BE1A1DFB482400E11E87 /* PlaidModel.swift in Sources */,
+				99FA637A1E44039400AC7D00 /* TransactionTableViewCell.swift in Sources */,
 				99D06D611E0C74C600DDE083 /* LoginViewController.swift in Sources */,
 				9923BE191DFB482400E11E87 /* CollectionViewController.swift in Sources */,
-				99476B0B1E3C8372006B0603 /* TransactionsTableViewController.swift in Sources */,
+				99476B0B1E3C8372006B0603 /* TransactionsViewController.swift in Sources */,
 				99EA7C311E20AE3100A08AE7 /* PlaidManager.swift in Sources */,
 				997CE8511DFE33F200A25BC9 /* RKNotificationHub.m in Sources */,
 				99D03F671E0B739600E73CE8 /* SFFocusViewLayout.swift in Sources */,

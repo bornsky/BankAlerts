@@ -78,9 +78,8 @@ public class Quickstart: NSObject {
                 }
                 
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                    let _ = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                     
-                    print(json)
                     
                 } catch let error as NSError {
                     print(error)

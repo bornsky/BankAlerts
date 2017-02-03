@@ -1,5 +1,5 @@
 //
-//  TransactionsTableViewController.swift
+//  TransactionsViewController.swift
 //  BankAlert
 //
 //  Created by Courtney Osborne on 1/27/17.
@@ -8,17 +8,17 @@
 
 import UIKit
 
-class TransactionsTableViewController: UITableViewController {
+class TransactionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     
     var transaction : [Transaction]?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     func updateUI() {
@@ -33,12 +33,12 @@ class TransactionsTableViewController: UITableViewController {
     
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let count = transaction?.count {
             return count
         }
@@ -47,7 +47,7 @@ class TransactionsTableViewController: UITableViewController {
     }
 
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         cell.textLabel?.text = self.transaction?[indexPath.row].name
