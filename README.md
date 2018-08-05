@@ -5,7 +5,7 @@ BankAlert is a opensource iOS application that lets you recieve instant transact
 
 # Installation
 The first thing you want to do is go to [Plaid](https://plaid.com) and sign up to get your secret, client_id and public_key. You will also need [Firebase](https://www.firebase.com) for push notifications. 
-Get clone this project. After that you want to install with Cocoapods.
+Git clone this project. After that you want to install Cocoapods.
 
 # License
 
