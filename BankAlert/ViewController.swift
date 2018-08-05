@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     let notificationlogo = RKNotificationHub()
     var time = Timer()
     
+    var humans = [Human]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,6 +29,8 @@ class ViewController: UIViewController {
         notificationlogo.moveCircleBy(x: -79, y: 50)
         notificationlogo.blink()
         
+        HumanCall()
+        
     }
     
     func animationRepeat() {
@@ -35,8 +39,48 @@ class ViewController: UIViewController {
         basic.repeatDuration = 1.0
         basic.fromValue = UIColor.black.cgColor
         basic.toValue = UIColor.red.cgColor
-        
     }
-
+    
+   fileprivate func HumanCall() {
+        
+        let urlString = ""
+        
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            DispatchQueue.main.async {
+                guard let data = data else { return }
+                
+                do {
+                    self.humans = try JSONDecoder().decode([Human].self, from: data)
+                    
+                    print(self.humans)
+                    
+//                    self.tableView.reloadData()
+                    
+                } catch let jsonError {
+                    
+                    print(jsonError)
+                }
+            }
+            
+        }.resume()
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

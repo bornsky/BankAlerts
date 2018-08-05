@@ -10,8 +10,6 @@ import UIKit
 
 class TransactionTableViewCell: UITableViewCell {
     
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +20,5 @@ class TransactionTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

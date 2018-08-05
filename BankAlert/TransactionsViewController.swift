@@ -27,18 +27,17 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
             print(transactions)
             self.transaction = transactions
             self.tableView.reloadData()
-        }
-        
+        }   
     }
     
     // MARK: - Table view data source
 
-     func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
 
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let count = transaction?.count {
             return count
         }
@@ -46,22 +45,16 @@ class TransactionsViewController: UIViewController, UITableViewDelegate, UITable
         return 0
     }
 
-
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         cell.textLabel?.text = self.transaction?[indexPath.row].name
 
         return cell
     }
- 
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
 }
+
+
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A79748220F7CB1700517166 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79748120F7CB1700517166 /* Networking.swift */; };
 		6E4ED27A68B07F2287311FA2 /* Pods_BankAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0766FDD0C8703067F96EB191 /* Pods_BankAlert.framework */; };
 		9903AEA81E221C7600205D23 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9903AEA71E221C7600205D23 /* .gitignore */; };
 		990E6EE41E095A04003D8E54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990E6EE31E095A04003D8E54 /* QuartzCore.framework */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		0766FDD0C8703067F96EB191 /* Pods_BankAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A79748120F7CB1700517166 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		7E495232931D48407062333D /* Pods-BankAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankAlert/Pods-BankAlert.release.xcconfig"; sourceTree = "<group>"; };
 		9903AEA71E221C7600205D23 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		990E6EE31E095A04003D8E54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -205,6 +207,7 @@
 				99EA7C301E20AE3100A08AE7 /* PlaidManager.swift */,
 				99EA7C321E20AF7200A08AE7 /* Transactions.swift */,
 				99EA7C341E20BFEE00A08AE7 /* Institutions.swift */,
+				2A79748120F7CB1700517166 /* Networking.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 				TargetAttributes = {
 					9923BE001DFB480200E11E87 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = S9XB7JWVLE;
+						DevelopmentTeam = 4DUBZM7EHV;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -442,6 +445,7 @@
 				99EA7C311E20AE3100A08AE7 /* PlaidManager.swift in Sources */,
 				997CE8511DFE33F200A25BC9 /* RKNotificationHub.m in Sources */,
 				99D03F671E0B739600E73CE8 /* SFFocusViewLayout.swift in Sources */,
+				2A79748220F7CB1700517166 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -581,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -597,8 +601,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BankAlert/BankAlert.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S9XB7JWVLE;
+				DEVELOPMENT_TEAM = 4DUBZM7EHV;
 				INFOPLIST_FILE = BankAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.BankAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -616,8 +621,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = BankAlert/BankAlert.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S9XB7JWVLE;
+				DEVELOPMENT_TEAM = 4DUBZM7EHV;
 				INFOPLIST_FILE = BankAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.BankAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,7 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = BankAlertUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.BankAlertUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,7 +649,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = BankAlertUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.BankAlertUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,7 +663,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BankAlertTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.BankAlertTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -671,7 +677,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BankAlertTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apps.BankAlertTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

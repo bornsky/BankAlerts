@@ -32,6 +32,9 @@ internal class Institutions : NSObject {
     }
 }
 
+
+
+
 public class PlaidInstitutions: NSObject {
     
     // MARK: PLAID KICK
@@ -48,7 +51,7 @@ public class PlaidInstitutions: NSObject {
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String: Any]]
-                
+                print(json)
                 var institutions: [Institutions] = []
                 
                 for banks in json {
@@ -56,6 +59,7 @@ public class PlaidInstitutions: NSObject {
                     if let bank = Institutions(json: banks) {
                         
                         institutions.append(bank)
+                        print(institutions)
                     }
                 }
                 DispatchQueue.main.async(execute: {
@@ -68,4 +72,5 @@ public class PlaidInstitutions: NSObject {
         }
         task.resume()
     }
+    
 }

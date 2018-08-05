@@ -7,8 +7,17 @@
 //
 
 import XCTest
+@testable import BankAlert
 
 class BankAlertTests: XCTestCase {
+    
+    let institution : [Institutions]? = nil
+    
+    func testLoadinginsituations() {
+        
+        
+    }
+    
     
     override func setUp() {
         super.setUp()
@@ -18,10 +27,6 @@ class BankAlertTests: XCTestCase {
     override func tearDown() {
         
         super.tearDown()
-    }
-    
-    func testExample() {
-        
     }
     
     func testPerformanceExample() {

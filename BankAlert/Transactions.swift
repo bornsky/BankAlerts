@@ -22,6 +22,7 @@ internal class Transaction: NSObject {
 }
 
 class PlaidTransaction: NSObject {
+    
  
     /*
      // Plaid URL for Transactions
@@ -67,6 +68,7 @@ class PlaidTransaction: NSObject {
                 
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [String: Any]
+                    print(json)
                     var trans : [Transaction] = []
                     for i in json["transactions"] as! [[String: Any]] {
                         if let transaction = Transaction(transaction: i) {
